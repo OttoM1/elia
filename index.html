@@ -1,0 +1,204 @@
+
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elia Assefa Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        section { display: none; }
+        section.active { display: block; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div href="#" class="logo" id="logox" onclick="showSection('home')">Elia Assefa</div>
+            <ul>
+
+            </ul>
+        </nav>
+    </header>
+
+<nav>          <div id="sss">     <ul><li><a>                <li><a href="#" onclick="showSection('menu')">☰</a></li>
+</a></li></ul>
+</div>
+</nav>
+
+
+    <section id="menu">
+    <div class="lol">
+        <div class="dropdown-content" id="dropdownMenu">
+            <br>
+            <br>
+            <a href="#" id="z1" onclick="showSection('collections')">Gallery</a>
+<br>
+<br>
+            <a href="#" id="z" onclick="showSection('menswear')">Accessories</a>
+            <br>
+            <br>
+            <a href="#" id="z2" onclick="showSection('womenswear')">Clothing</a>
+            <br>
+            <br>
+            <a href="#" id="z3" onclick="showSection('contactUs')">Contact Us</a>
+            <br>
+            <br>
+            <a href="#" id="z4" onclick="showSection('shoppingCart')">Cart</a>
+        </div>
+    </div>
+
+</section>
+
+
+
+    <section id="home" class="active">
+        <h2>Biography</h2>
+
+<p>vois olla täs vai haluuks et laitetaa seki piiloo</p>        
+    </section>
+
+    <section id="collections">
+        <h2>Gallery</h2>
+
+        <div class="product-grid">
+            <div class="product">
+
+                <h3>Photo1</h3>
+                <p>...</p>
+                <button class="buy-btn" onclick="showSection('p1')">Inspect</button>
+            </div>
+            <div class="product">
+                <h3>Photo2</h3>
+                <p>...</p>
+                <button class="buy-btn" onclick="showSection('p2')">Inspect</button>
+            </div>
+            <div class="product">
+                <h3>Photo3</h3>
+                <p>...</p>
+                <button class="buy-btn" onclick="showSection('p3')">Inspect</button>
+            </div>
+            <div class="product">
+
+                <h3>Photo4</h3>
+                <p>...</p>
+                <button class="buy-btn" onclick="showSection('p4')">Inspect</button>
+               
+            </div>
+
+
+
+            <!--
+            <div class="product">
+
+                <h3>Photo5</h3>
+                <p>...</p>
+                <button class="buy-btn">Inspect</button>
+            </div>
+            <div class="product">
+
+                <h3>Photo6</h3>
+                <p>...</p>
+                <button class="buy-btn">Inspect</button>
+            </div>
+        </div>
+    -->
+    </section>
+
+
+
+    <section id="p1">
+ 
+
+
+
+
+        <div id="overlay">
+        <p onclick="showSection('collections')">Täs ois kuva isompan ja sit teksti esim</p>
+
+        </div>
+    </section>
+
+    <section id="p2">
+ 
+
+
+
+
+        <div id="overlay">
+        <p onclick="showSection('collections')">Täs ois kuva isompan ja sit teksti esim</p>
+
+        </div>
+    </section>
+
+
+
+    <section id="p3">
+ 
+
+
+
+
+        <div id="overlay">
+        <p onclick="showSection('collections')">Täs ois kuva isompan ja sit teksti esim</p>
+
+        </div>
+    </section>
+
+    <section id="p4">
+ 
+
+
+
+
+        <div id="overlay">
+        <p onclick="showSection('collections')">Täs ois kuva isompan ja sit teksti esim</p>
+
+        </div>
+    </section>
+   
+
+
+
+    <section id="menswear">
+        <h2>Acessories</h2>
+        <p>...</p>
+    </section>
+
+    <section id="womenswear">
+        <h2>Clothing</h2>
+        <p>....</p>
+    </section>
+
+    
+    <section id="contactUs">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input id="g" type="text" name="name" placeholder="Your Name" required>
+            <input id="g2"  type="email" name="email" placeholder="Your Email" required>
+            <textarea id="g3" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="shoppingCart">
+        <h2>Your Shopping Cart</h2>
+        <p>No items yet.</p>
+    </section>
+
+    
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll("section").forEach(section => {
+                section.classList.remove("active");
+            });
+            document.getElementById(sectionId).classList.add("active");
+        }
+    </script>
+
+</body>
+</html>
